@@ -13,14 +13,14 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFirstBinding.bind(view)
         binding.apply {
-            var sum = 0
+            var sum = 0.0
             btnPlay.setOnClickListener {
                 if (etP1.text.isNullOrBlank() || etP2.text.isNullOrBlank() || etP3.text.isNullOrBlank()) {
                     Toast.makeText(requireContext(), "Malumotlarni toltiring", Toast.LENGTH_SHORT).show()
                 } else {
-                    var a = etP1.text.toString().toInt()
-                    var b = etP2.text.toString().toInt()
-                    var c = etP3.text.toString().toInt()
+                    var a = etP1.text.toString().toDouble()
+                    var b = etP2.text.toString().toDouble()
+                    var c = etP3.text.toString().toDouble()
                     sum = (a * b * c - b * c * (1 - a) - a * c * (1 - b) - a * b * (1 - c) - a * (1 - b) * (1 - c) - b * (1 - a) * (1 - c) - c * (1 - a) * (1 - b))
                     tvPSum.text = sum.toString()
                 }
