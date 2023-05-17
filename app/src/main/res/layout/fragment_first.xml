@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="P_1 - магнит ўзгартириш элементи"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toBottomOf="@id/tvPP1"
+        app:layout_constraintStart_toStartOf="@id/tvPP1"
+        android:id="@+id/tvP1"
+        android:layout_width="wrap_content"
+        android:textStyle=""
+        android:layout_height="wrap_content"
+        android:text="P1 ="
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0.456132"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tvP1"
+        app:layout_constraintTop_toTopOf="@id/tvP1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvP1"
+        app:layout_constraintStart_toStartOf="@id/tvP1"
+        android:text="P_2- сезгир элементи"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toBottomOf="@id/tvPP2"
+        app:layout_constraintStart_toStartOf="@id/tvP1"
+        android:id="@+id/tvP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P2 ="
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etP2"
+        app:layout_constraintStart_toEndOf="@id/tvP2"
+        app:layout_constraintTop_toTopOf="@id/tvP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0.234964"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvP2"
+        app:layout_constraintStart_toStartOf="@id/tvP2"
+        android:text="P_3- тармоқ ток ўтказгичи иш холати"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintStart_toStartOf="@id/tvPP3"
+        app:layout_constraintTop_toBottomOf="@id/tvPP3"
+        android:id="@+id/tvP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P3 ="
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etP3"
+        app:layout_constraintStart_toEndOf="@id/tvP3"
+        app:layout_constraintTop_toTopOf="@id/tvP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0.642375"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvP3"
+        app:layout_constraintEnd_toStartOf="@id/tvPSum"
+        android:text="PΣ ="
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp"
+        android:textSize="36sp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvP3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="0.9545613"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp"
+        android:textSize="36sp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Hisoblash"
+        android:textColor="#69869F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="36dp"
+        android:paddingHorizontal="48dp"
+        android:background="@color/purple_700"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
